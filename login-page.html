@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Database</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- ajax -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home-page.html">IMBD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
+                    </li> &nbsp;
+                    <!-- <li class="nav-item active">
+                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Login In</button></a>  
+                    </li> &nbsp &nbsp;
+                    <li class="nav-item active">
+                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Sign Up</button></a>  
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Log in</a>
+                    </li> --> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up-page.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+      </nav>
+   
+      <div class="container-fluid bg-img">
+          <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <form id="form" action="account-page.html" method="GET" class="form-container">
+                    <h1>Login to your User Account</h1>
+                    <div class="form-group">
+                      <label for="name">Email/Username:</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block loginSubmit">Login in</button>
+                    <div id="error-msg"></div>
+                </form>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
+          </div>
+      </div>
+    
+
+
+
+      <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Database</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- ajax -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+  <body>
+    <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home-page.html">IMBD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>   
+      </nav>
+      
+    <div class="container movie-box">
+      <h1>Movie Search</h1>
+
+      <!-- This form will be where users input data about the movies -->
+      <form id="movie-form">
+        <label for="movie-input">Search for a movie</label>
+        <input type="text" id="movie-input" /><br />
+
+        <!-- This button will trigger our AJAX call -->
+        <input id="find-movie" type="submit" value="Movie Search" />
+      </form>
+
+      <!-- displaying JSON contents in here -->
+      <div id="movie-view"></div>
+        
+    <script src="./js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

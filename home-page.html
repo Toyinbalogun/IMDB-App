@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Database</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- ajax -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+    <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home-page.html">IMBD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
+                    </li> &nbsp;
+                    <!-- <li class="nav-item active">
+                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Login In</button></a>  
+                    </li> &nbsp &nbsp;
+                    <li class="nav-item active">
+                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Sign Up</button></a>  
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login-page.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up-page.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+      </nav>
+
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="5000">
+            <!-- <div class="carousel-item active" > -->
+            <img  id="c-img" src="Images/pp1.jpg"  class="d-block w-100" alt="background picture of space jam">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Browse Your Favorite Movies</h5>
+                <p>Browse movies and add reviews to moives you have watched.</p>
+                <button class="btn btn-success car-btn">Start Browsing</button>
+              </div>
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img id="c-img" src="Images/sab1.jpg" class="d-block w-100" alt="picture of sabrina/netflix tvshow">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Browse Your Favorite Tv Shows</h5>
+                <p>Browse tv shows and add reviews to tv shows you have watched.</p>
+                <button class="btn btn-success car-btn">Start Browsing</button>
+              </div>
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img id="c-img" src="Images/sci-fi.jpg" class="d-block w-100" alt="picture of sabrina/netflix tvshow">
+            <div id="doc-text" class="carousel-caption d-none d-md-block">
+                <h5>Browse Your Favorite Documentaries</h5>
+                <p>Browse documentaries and add reviews to documentaries you have watched.</p>
+                <button class="btn btn-success car-btn">Start Browsing</button>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
