@@ -15,42 +15,57 @@
 </head>
 <body>
     <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="home-page.html">IMBD</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
-                    </li> &nbsp; -->
-                    <!-- <li class="nav-item active">
-                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Login In</button></a>  
-                    </li> &nbsp &nbsp;
-                    <li class="nav-item active">
-                        <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Sign Up</button></a>  
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
-                    </li> --> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign-up-page.html">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>   
-      </nav>
+      <div class="container">
+          <a class="navbar-brand" href="home-page.html">IMBD</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
+                  </li> &nbsp; -->
+                  <!-- <li class="nav-item active">
+                      <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Login In</button></a>  
+                  </li> &nbsp &nbsp;
+                  <li class="nav-item active">
+                      <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Sign Up</button></a>  
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="login-page.html">Log in</a>
+                </li> &nbsp; &nbsp;  -->
+
+                  <div class="dropdown">
+                    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign Up
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="reg-user-sign-up.html">Regular User</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="contri-user-sign-up.html">Contributing User</a>
+                    </div>
+                  </div>
+
+                  
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="sign-up-page.html">Sign Up</a>
+                  </li> -->
+              </ul>
+          </div>
+      </div>   
+    </nav>
+
    
       <div class="container-fluid bg-img">
           <div class="row">
               <div class="col-md-4 col-sm-4 col-xs-12"></div>
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <form id="form" action="account-page.html" method="GET" class="form-container">
-                    <h1>Login to your User Account</h1>
+                    <h1>Login To Your User Account</h1>
                     <div class="form-group">
-                      <label for="name">Email/Username:</label>
+                      <label for="name">Username:</label>
                       <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
@@ -62,7 +77,9 @@
                       <label class="form-check-label" for="exampleCheck1">Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-success btn-block loginSubmit">Login in</button>
-                    <div id="error-msg"></div>
+                    <div id="error-msg"></div> <br>
+
+                    <span>If you do not have an account, click the <a href="sign-up-page.html">Create an Account</a></span>
                 </form>
               </div>
               <div class="col-md-4 col-sm-4 col-xs-12"></div>
@@ -72,7 +89,9 @@
 
 
 
-      <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

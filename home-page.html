@@ -34,11 +34,25 @@
                         <a href="login-page.html"><button class="nav-link btn btn-warning"  style="width:140px">Sign Up</button></a>  
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="login-page.html">Log in</a>
-                    </li>
-                    <li class="nav-item">
+                      <a class="nav-link" href="login-page.html">Log in</a>
+                   </li> &nbsp; &nbsp; 
+
+                    <div class="dropdown">
+                      <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign Up
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="reg-user-sign-up.html">Regular User</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contri-user-sign-up.html">Contributing User</a>
+                      </div>
+                    </div>
+
+                    
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="sign-up-page.html">Sign Up</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>   
@@ -52,7 +66,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h5>Browse Your Favorite Movies</h5>
                 <p>Browse movies and add reviews to moives you have watched.</p>
-                <button class="btn btn-success car-btn">Start Browsing</button>
+                <button onclick="location.href='login-page.html';" class="btn btn-success car-btn">Start Browsing</button>
               </div>
           </div>
           <div class="carousel-item" data-interval="5000">
@@ -60,7 +74,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h5>Browse Your Favorite Tv Shows</h5>
                 <p>Browse tv shows and add reviews to tv shows you have watched.</p>
-                <button class="btn btn-success car-btn">Start Browsing</button>
+                <button onclick="location.href='login-page.html';" class="btn btn-success car-btn">Start Browsing</button>
               </div>
           </div>
           <div class="carousel-item" data-interval="5000">
@@ -68,7 +82,7 @@
             <div id="doc-text" class="carousel-caption d-none d-md-block">
                 <h5>Browse Your Favorite Documentaries</h5>
                 <p>Browse documentaries and add reviews to documentaries you have watched.</p>
-                <button class="btn btn-success car-btn">Start Browsing</button>
+                <button onclick="location.href='login-page.html';" class="btn btn-success car-btn">Start Browsing</button>
               </div>
           </div>
         </div>
@@ -88,7 +102,8 @@
 
 
     <script src="./js/script.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
