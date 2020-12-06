@@ -62,25 +62,25 @@
           <div class="row">
               <div class="col-md-4 col-sm-4 col-xs-12"></div>
               <div class="col-md-4 col-sm-4 col-xs-12">
-                <form id="form" action="account-page.html" method="GET" class="form-container">
-                    <h1>Login To Your User Account</h1>
-                    <div class="form-group">
-                      <label for="name">Username:</label>
-                      <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Password:</label>
-                      <input type="password" class="form-control" id="password" name="password">
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-success btn-block loginSubmit">Login in</button>
-                    <div id="error-msg"></div> <br>
+                <form class="form-container" action="/login" method="POST">
+                  <h1>Log Into User Account</h1>
+                  
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                  </div>
 
-                    <span>If you do not have an account, click the <a href="sign-up-page.html">Create an Account</a></span>
-                </form>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                  </div>
+
+                  <button type="submit" class="btn btn-success btn-block">Log In</button>
+                  <a type="button" href="/Reset-Password" class="btn btn-link">Forgot Password?</a>
+
+                  <br>
+                  <span>If you do not already have an account, click the <a href="/conUser-register">Sign Up</a></span>
+              </form>
               </div>
               <div class="col-md-4 col-sm-4 col-xs-12"></div>
           </div>
