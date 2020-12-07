@@ -28,5 +28,4 @@ module.exports = function(app) {
   // app.get('/conUser-register', (req, res) => {
   //   res.res.sendFile(path.join(__dirname, "public/contri-user-sign-up.html"))
   // });
-
 };
