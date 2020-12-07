@@ -15,9 +15,10 @@
 </head>
 
   <body>
-    <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div>
+      <nav id="nav-back" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="home-page.html">IMBD</a>
+            <a class="navbar-brand" href="account-page.html".html">IMBD</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,28 +27,70 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a>
+                        <!-- <a class="nav-link" href="account-page.html">Browse Movies/Tv Shows/Documentaries</a> -->
+                        <a class="btn btn-info" href="#">Following</a>
+                        <a class="btn btn-success" href="#">Followers</a>
+                        <a class="btn btn-danger" href="./home-page.html">Log Out</a>
                     </li> 
                 </ul>
             </div>
         </div>   
       </nav>
-      
-    <div class="container movie-box">
+    </div>
+    <br>
+ 
+    <div class="movie-box">
       <h1>Movie Search</h1>
 
       <!-- This form will be where users input data about the movies -->
       <form id="movie-form">
         <label for="movie-input">Search for a movie</label>
-        <input type="text" id="movie-input" /><br />
+        <input type="text" id="movie-input" />
+        <br> 
 
         <!-- This button will trigger our AJAX call -->
-        <input id="find-movie" type="submit" value="Movie Search" />
+        <input class="btn btn-secondary" id="find-movie" type="submit" value="Movie Search" />
       </form>
 
       <!-- displaying JSON contents in here -->
       <div id="movie-view"></div>
-    </div>   
+    </div> 
+    
+    <div class="container">
+      <div id="mcard" class="card">
+        <h5 class="card-header" id="title">Title</h5>
+        <div class="card-body">
+          <h3 id="card-rel">the year rel + genre </h3>
+          <hr>
+          <img id="poster" alt="movie-poster"></img>
+          <hr>
+          <p id="plot">plot </p>
+          <p id="actors">actors</p>
+          <p id="directors">directors</p>
+        </div>
+      </div>
+    </div>
+<br>
+    <div class="container">
+      
+        <form id="ratecard">
+          <div  class="form-group">
+            <h3 id="ctext">Rate this movie and drop a review!</h3>
+            <label for="rate">Rate: </label>
+            <input type="text"  id="rating">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Review: </label>
+            <textarea class="form-control" id="review" rows="3"></textarea>
+          </div>
+          <button id="ratRevBtn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <h5 id="updateRating">Movie Rating: </h5>
+        <h5 id="updateReview">Reviews: </h5>
+      
+    </div>
+
     
     <script src="./js/script2.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

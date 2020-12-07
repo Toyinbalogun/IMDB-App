@@ -3,11 +3,19 @@ const router = express.Router()
 const mongoose = require('mongoose')
 const User = mongoose.model("User")
 const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const {JWT_SECRET} = require('../keys')
+const requireLogin = require('../middleware/requireLogin')
+
 
 
 // router.get('/', (req, res)=>{
 //     res.send("hello world")
 //     // res.sendFile(path.join(__dirname, "public/home-page.html"))
+// })
+
+// router.get('/protected', requireLogin, (req,res)=> {
+//     res.send("hello user")
 // })
 
 //post request for signup route
@@ -34,7 +42,9 @@ router.post('/conUser-register', (req, res) => {
     
             user.save()
             .then(user=>{
-                res.json({message: "saved successfully"})
+                // res.json({message: "saved successfully"})
+                console.log("saved succesfully")
+                res.redirect('/login')
             })
             .catch(err=>{
                 console.log(err)
@@ -61,7 +71,11 @@ router.post('/login', (req, res) => {
         bcrypt.compare(password, savedUser.password)
         .then(isMatch=>{
             if(isMatch){
-                res.json({message: "successfully signe in"})
+                // res.json({message: "successfully signed in"})
+                const token = jwt.sign({_id:savedUser._id}, JWT_SECRET)
+                // res.json({token})
+                console.log({token})
+                res.redirect('/account-page.html')
             }
             else{
                 return res.status(422).json({error: "Invalid email or password"}) // client entered wrong password

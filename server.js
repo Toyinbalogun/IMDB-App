@@ -1,15 +1,9 @@
 const express = require('express')
-var path = require("path")
+// var path = require("path")
 const app = express()
 const PORT = process.env.PORT || 3000
 const mongoose = require('mongoose')
 const {MONGOURI} = require('./keys')
-
-
-require('./models/user')
-app.use(express.json())
-
-app.use(require('./routes/auth'))
 
 mongoose.connect(MONGOURI,
     {
@@ -25,6 +19,25 @@ mongoose.connection.on('error', ()=>{
     console.log("error connecting", err)
 })
 
+require('./models/user')
+require('./models/post')
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
+
+// Static directory to be served
+app.use(express.static('public'))
+
+// Here we introduce HTML routing to serve different HTML files
+require('./routes/html-routes')(app)
+
+
+
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
+
+
+
 
 
 // app.use(express.static('public'))
@@ -32,7 +45,7 @@ mongoose.connection.on('error', ()=>{
 // app.use(express.urlencoded({ extended: false }));
 
 
-// //request handler for all routes
+//request handler for all routes
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname, "public/home-page.html"));
 // })

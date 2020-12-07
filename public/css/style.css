@@ -111,3 +111,26 @@
 .movie-box{
   padding: 70px 80px;
 }
+
+.card-header{
+  font-size: 30px;
+}
+
+#card-rel{
+  font-size: 22px;
+}
+
+#poster{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#ctext{
+  text-align: center;
+}
+
+#updateRatings, #updateReviews{
+  display: none;
+}
