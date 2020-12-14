@@ -5,6 +5,13 @@ A web application similar to IMDb that maintains a database of movie information
 # Deployed Version
 Currently working on project, to see a deployed version click link--> https://imdb-app2406.herokuapp.com/
 
+# To Run Locally
+- clone git repo
+- on terminal(in repo) run: 
+- step 1: npm install
+- step 2: node server.js
+- on browser run --> http://localhost:3000/
+
 # Instructions
 - Create a contibuting user acount
 - login in with created account details
